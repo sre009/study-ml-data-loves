@@ -14,3 +14,9 @@ source lesson1/bin/activate
 
 uv run python --version
 uv run python script.py
+
+uv venv --python 3.14
+source .venv/bin/activate
+uv pip install jupyterlab pandas matplotlib ipykernel
+echo ".venv/" >> .gitignore
+jupyter lab
